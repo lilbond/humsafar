@@ -1,0 +1,24 @@
+:root {
+  --main-bg-color: #616161;
+  --paper-bg-color: #424242;
+  --secondary-bg-color: #f1c40f;
+  --main-color: #424242;
+  --secondary-color: #f1c40f;
+  --third-bg-color: #d35400;
+  --third-light-color: #ecf0f1;
+  --success-color: green;
+  --failure-color: red;
+}
+
+body {
+  background-color: #616161;
+}
+
+::placeholder {
+  color: var(--secondary-color);
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: var(--secondary-color);
+}

@@ -1,0 +1,208 @@
+
+
+.main {
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  min-width: 100vw;
+  padding: 1rem;
+  justify-content: flex-start;
+}
+
+.stack {
+  flex-direction: column;
+}
+
+.btn {
+  border-radius: 5px;
+  font-size: 14px;
+  color: var(--main-color);
+  padding: 0.2rem;
+  font-weight: 600;
+}
+
+.btnPrimary {
+  background-color: var(--main-bg-color);
+  color: var(--secondary-color);
+}
+
+.btnSecondary {
+  background-color: var(--secondary-bg-color);
+  color: var(--main-color);
+}
+
+.paper {
+  background-color: var(--paper-bg-color);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px var(--main-bg-color);
+}
+
+.italics {
+  font-style: italic;
+}
+
+.secondaryBackground {
+  background-color: var(--secondary-bg-color);
+}
+
+.secondaryColor {
+  color: var(--secondary-color) !important;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  margin: 1rem;
+  color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.seatRow {
+  margin: 0.1rem;
+  padding: 0.1rem;
+}
+
+.seatRowLabel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+  padding: 0.1rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--third-bg-color);
+  text-align: center;
+  color: var(--third-light-color)
+}
+
+.coach {
+  display: flex;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.gridItem {
+  color: var(--main-color);
+  padding: 10px;
+  text-align: center;
+}
+
+.marginLeft {
+  margin-left: 2rem;
+}
+
+.bookingInput {
+  margin-right: 1rem;
+  background-color: var(--main-bg-color);
+  color: var(--secondary-color);
+  padding: 0.3rem;
+  border-radius: 5px;
+  font-style: italic;
+  font-size: 14px;
+  min-width: 200px;
+}
+
+.successBg {
+  background-color: var(--success-color) !important;
+}
+
+.failureBg {
+  background-color: var(--failure-color) !important;
+}
+
+.alert {
+  padding: 20px;
+  background-color: var(--secondary-bg-color);
+  color: var(--main-color);
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.alertClosebtn {
+  margin-left: 15px;
+  color: var(--main-color);
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.bookedBackground {
+  background-color: #f44336 !important;
+}
+
+/* Style the modal */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Content */
+.modalContent {
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--secondary-bg-color);
+}
+
+.modalText {
+  margin-left: 14px;
+  font-size: 24px;
+}
+
+/* Create the circle loader with pure CSS */
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 8px solid #ddd;
+  border-top: 8px solid var(--main-color);
+  border-bottom: 8px solid var(--main-color);
+  border-radius: 50%;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

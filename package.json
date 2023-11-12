@@ -1,0 +1,28 @@
+{
+  "name": "humsafar",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 8080",
+    "build": "npx next telemetry disable && next build",
+    "start": "next start -p 8080",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/uuid": "^9.0.6",
+    "mysql2": "^3.6.3",
+    "next": "14.0.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "serverless-mysql": "^1.5.5",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.1",
+    "typescript": "^5"
+  }
+}
