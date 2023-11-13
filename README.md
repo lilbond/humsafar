@@ -60,6 +60,6 @@ package.json has been updated to use `next dev -p 8080` even while using `npm st
 -   Button Click To Book: Just try to do the booking.
 -   Color Code: `Yellow` represents `unbooked` seats and `red` represents `booked` seats.
 
-## Embed
+## Video
 
-<video src="https://drive.google.com/file/d/15DGbzz74jDFymqV9N436rCM7maowePCh/view?usp=sharing" controls title="Title"></video>
+![Video](https://drive.google.com/file/d/15DGbzz74jDFymqV9N436rCM7maowePCh/view?usp=sharing)
