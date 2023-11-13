@@ -14,6 +14,10 @@ The schema has been kept very simple. We have a table `schema_row` which relates
 
 The main solution is packaged in procedure `sp_book`.
 
+## SQL Code
+
+It is present in `sql` folder.
+
 ### Basic Idea
 
 -   Try to find if we have enough seat in a single row.
