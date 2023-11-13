@@ -1,4 +1,4 @@
-import { BookingResponse } from '../data/types';
+import { BookingResponse } from '../models/types';
 
 export const bookSeats = async (count: number) => {
 	try {

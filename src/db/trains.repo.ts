@@ -47,19 +47,15 @@ export class TrainsRepo {
 	};
 
 	generateSeedData = async () => {
-		try {
-			await this.deleteSeedData();
+		await this.deleteSeedData();
 
-			const seatRows = this.dataGenerator.generate();
-			seatRows.forEach(async (row: SeatRow) => {
-				await this.addSeatRow(row);
+		const seatRows = this.dataGenerator.generate();
+		seatRows.forEach(async (row: SeatRow) => {
+			await this.addSeatRow(row);
 
-				row.seats.forEach(async (seat: Seat) => {
-					await this.addSeat(seat);
-				});
+			row.seats.forEach(async (seat: Seat) => {
+				await this.addSeat(seat);
 			});
-		} catch (error) {
-			console.log(error);
-		}
+		});
 	};
 }

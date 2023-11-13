@@ -41,7 +41,6 @@ export default function Home() {
 					return response.json();
 				})
 				.then((obj) => {
-					console.log(obj);
 					setSeatRows(obj.seatRows);
 				})
 				.finally(() => {

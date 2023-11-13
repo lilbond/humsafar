@@ -1,3 +1,8 @@
+export interface BookingResponse {
+	seats: Array<Seat> | undefined;
+	success: boolean;
+}
+
 export class Seat {
 	id: number;
 	rowId: number;

@@ -1,5 +1,4 @@
-import { Seat } from '@/app/models/types';
-import { BookingResponse } from '@/app/data/types';
+import { BookingResponse, Seat } from '@/app/models/types';
 import { TrainsRepo } from '@/db/trains.repo';
 
 const repo = new TrainsRepo();
